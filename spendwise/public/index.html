@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpendWise | Smart Money. Smarter You.</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="bg-animations">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <nav>
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="SpendWise Logo">
+            <span>SpendWise</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">How it works</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Testimonials</a></li>
+        </ul>
+        <a href="login.html" id="nav-btn" class="btn-buy">Login</a>
+    </nav>
+
+    <main class="hero">
+        <div class="badge">🌐 Dashboard</div>
+        <h1>Smart Money.<br>Smarter You.</h1>
+        <p class="hero-subtitle">All-in-one expense management that helps finance teams automate and control spending
+        </p>
+
+        <div class="btn-group">
+            <a href="register.html" class="btn-primary">Start today - It's free</a>
+            <a href="login.html" class="btn-secondary">Learn more</a>
+        </div>
+
+        <p class="social-proof">Rated 4.9 by 100+ customers</p>
+
+        <div class="preview-container">
+            <img src="assets/dashboard-preview.png" alt="SpendWise Dashboard Preview" class="dashboard-img">
+        </div>
+    </main>
+
+    <script>
+        window.onload = function () {
+            const session = localStorage.getItem("session");
+            if (session) {
+                const navBtn = document.getElementById("nav-btn");
+                navBtn.href = "dashboard.html";
+                navBtn.innerText = "Dashboard";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
